@@ -13,9 +13,16 @@ app.set("views", "./views");
 app.get("/", (req, res) => {
   res.redirect("/restaurants");
 });
+
 app.get("/restaurants", (req, res) => {
   res.render("index", { restaurant });
 });
+
+app.get("/restaurants/:id", (req, res) => {
+  const id = req.params.id; //string
+  res.send(`歡迎來到商品${id}的page`);
+});
+
 app.get("/sss", (req, res) => {
   res.send(restaurant);
 });
