@@ -20,7 +20,8 @@ app.get("/restaurants", (req, res) => {
 
 app.get("/restaurants/:id", (req, res) => {
   const id = req.params.id; //string
-  res.send(`歡迎來到商品${id}的page`);
+  const selectedRestaurant = restaurant.find((item) => item.id === +id);
+  res.render("selectedPage", { selectedRestaurant });
 });
 
 app.get("/sss", (req, res) => {
