@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const { engine } = require("express-handlebars");
+const restaurant = require("./public/json/restaurant.json").results;
 
 //middleware
 app.use(express.static("public"));
@@ -10,10 +11,13 @@ app.set("view engine", ".hbs");
 app.set("views", "./views");
 
 app.get("/", (req, res) => {
-  res.redirect("/restaurant");
+  res.redirect("/restaurants");
 });
-app.get("/restaurant", (req, res) => {
-  res.render("index");
+app.get("/restaurants", (req, res) => {
+  res.render("index", { restaurant });
+});
+app.get("/sss", (req, res) => {
+  res.send(restaurant);
 });
 
 app.listen(port, () => console.log("server is listening on port 3000"));
