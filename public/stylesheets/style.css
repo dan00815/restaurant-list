@@ -44,6 +44,7 @@ header {
 .btn-major {
   background-color: #9b4b4b;
   color: white;
+  height: 100%;
 }
 
 .form-control:focus {

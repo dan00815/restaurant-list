@@ -26,14 +26,13 @@ app.get("/restaurants", (req, res) => {
             keyproperty === "location" ||
             keyproperty === "description"
           ) {
-            // console.log(item[keyproperty]);
             return item[keyproperty].toLowerCase().includes(keyword);
           }
           return false;
         })
       )
     : restaurant;
-  //關鍵字搜尋，希望用戶可以從除了店名以外的地方搜尋到，但又希望就實際體驗來看，只能從點進去的頁面中所見的資訊(名字、類別、地址、詳細介紹)這些文字中搜尋
+  //關鍵字搜尋，除了從店名搜尋外，只能從點進去餐廳頁面中能看見的資訊(名字、類別、地址、詳細介紹)來做搜尋，希望能較符合實際體驗
 
   //找不到搜尋結果
   if (!searchResult.length) {
