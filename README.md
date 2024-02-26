@@ -43,15 +43,17 @@ npm install
 npm run start
 ```
 
-終端機顯示==server is listening on port 3000==代表啟動完成，請至[http://localhost:3000](http://localhost:3000)開始使用應用程式
+終端機顯示`server is listening on port 3000`代表啟動完成，請至[http://localhost:3000](http://localhost:3000)開始使用應用程式
 
 ## Screen Photo 專案畫面
 
-![home](https://github.com/dan00815/restaurant-list/blob/main/public/img/home.jpg)
-![search](https://github.com/dan00815/restaurant-list/blob/main/public/img/search.jpg)
-![page](https://github.com/dan00815/restaurant-list/blob/main/public/img/page.jpg)
+## ![home](https://github.com/dan00815/restaurant-list/blob/main/public/img/home.jpg)
+
+## ![search](https://github.com/dan00815/restaurant-list/blob/main/public/img/search.jpg)
+
+## ![page](https://github.com/dan00815/restaurant-list/blob/main/public/img/page.jpg)
 
 ## Tools 使用工具
 
-Express - 4.18.2
-Handlerbars - 7.1.2
+- Express - 4.18.2
+- Handlerbars - 7.1.2
