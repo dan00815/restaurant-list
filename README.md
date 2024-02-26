@@ -45,6 +45,12 @@ npm run start
 
 終端機顯示`server is listening on port 3000`代表啟動完成，請至[http://localhost:3000](http://localhost:3000)開始使用應用程式
 
+5.若要退出當前專案
+
+```
+Ctrl+C *2  //連按兩下Ctrl+C結束批次工作
+```
+
 ## Screen Photo 專案畫面
 
 ## ![home](https://github.com/dan00815/restaurant-list/blob/main/public/img/home.jpg)
